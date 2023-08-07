@@ -1,0 +1,25 @@
+de los correos:
+	identificar los que tienen coincidencia con numeros de documento
+	descargar pdf
+	buscar valor de IAH
+	verificar si contiene las palabras de una lista
+	dejarlo en csv(excel)
+ajchaparror@unal.edu.co
+
+issues:
+	no todos los documento tienen la misma etiqueta:
+		etiquetas halladas:
+			D.I. No.
+			Documento
+		solución:
+			ir incluyendo las otras etiquetas
+	
+	PyPDF2.errors.PdfReadError: EOF marker not found
+		solución:
+			https://stackoverflow.com/questions/45390608/eof-marker-not-found-while-use-pypdf2-merge-pdf-file-in-python
+	
+	el extractor no guarda los datos, sino hasta el final
+		solución:
+			ver si se puede ir guardando por partes
+			sino, manejar la excepción de arriba
+			ignorar los dañados
